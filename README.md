@@ -4,7 +4,7 @@
 
 Scans ports to see if they are open or closed. 
 
-Each scan is synchronous.
+Each scan ports are checked in order, one after the previous is completed.
 
 Multiple calls can be made and will run in parallel.
 
