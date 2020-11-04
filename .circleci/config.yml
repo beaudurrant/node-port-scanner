@@ -1,0 +1,11 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:7.10
+      
+    working_directory: ~/node-port-scanner
+      
+    steps:
+      - checkout
+      - run: npm test

@@ -4,7 +4,7 @@ const net = require('net');
 // scan range of ports for status (open|closed)
 const nodePortScanner = (host, ports, status, callback) => {
 
-  //all ports that exist
+  // all ports that exist
   const allPorts = Array.from({length: 65535}, (_, i) => i + 1);
 
   // connect to a single port and get the status
