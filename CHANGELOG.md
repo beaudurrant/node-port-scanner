@@ -1,3 +1,6 @@
+# 1.0.4
+* [[`d7b5d427762ed81bcda2bf7f7f3a58a46d730f91`](https://github.com/beaudurrant/node-port-scanner/commit/d7b5d427762ed81bcda2bf7f7f3a58a46d730f91)] - Added circleci config & updated README (Beau Durrant)
+
 # 1.0.3
 * [[`45cef9e9293683f2441bc2caaba8c6c6b16fbf94`](https://github.com/beaudurrant/node-port-scanner/commit/45cef9e9293683f2441bc2caaba8c6c6b16fbf94)] - Updated README & version number (Beau Durrant)
 
