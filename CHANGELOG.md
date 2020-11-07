@@ -1,3 +1,6 @@
+# 2.0.1
+* [[`015fcf731cd046c503f0391d18794971e59e6353`](https://github.com/beaudurrant/node-port-scanner/commit/015fcf731cd046c503f0391d18794971e59e6353)] - Updated tests to use jest (Beau Durrant)
+
 # 2.0.0
 * [[`0313d1f87fe9ff2307cead5c3f8f8638556224eb`](https://github.com/beaudurrant/node-port-scanner/commit/0313d1f87fe9ff2307cead5c3f8f8638556224eb)] - Updated to use promise so async/await can be used. (Beau Durrant)
 
