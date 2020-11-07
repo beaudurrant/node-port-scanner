@@ -1,3 +1,6 @@
+# 2.0.0
+* [[`0313d1f87fe9ff2307cead5c3f8f8638556224eb`](https://github.com/beaudurrant/node-port-scanner/commit/0313d1f87fe9ff2307cead5c3f8f8638556224eb)] - Updated to use promise so async/await can be used. (Beau Durrant)
+
 # 1.0.4
 * [[`d7b5d427762ed81bcda2bf7f7f3a58a46d730f91`](https://github.com/beaudurrant/node-port-scanner/commit/d7b5d427762ed81bcda2bf7f7f3a58a46d730f91)] - Added circleci config & updated README (Beau Durrant)
 
