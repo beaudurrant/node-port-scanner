@@ -1,5 +1,6 @@
 version: 2.1
 jobs:
+
   build:
     docker:
       - image: circleci/node:12.19
@@ -8,4 +9,6 @@ jobs:
       
     steps:
       - checkout
-      - run: npm test
+      - run: npm install
+      - run: npm fund
+      - run: npm run usage

@@ -11,10 +11,14 @@ Multiple calls can be made and will run in parallel.
 ## Install
 
 ```bash
-npm install node-port-scanner
+npm i node-port-scanner
 ```
 
 ## Usage
+
+```sh
+npm run usage
+```
 
 ```javascript
 const nodePortScanner = require('node-port-scanner');
@@ -37,7 +41,7 @@ nodePortScanner('github.com', [21, 22, 23, 25, 80, 110, 123, 443], 'open')
     console.log('Error: ' + error);
   });
 
-//scan for closed local common ports
+// scan for closed local common ports
 nodePortScanner('127.0.0.1', [21, 22, 23, 25, 80, 110, 123, 443], 'closed')
   .then(results => {  
     console.log(results);
@@ -69,7 +73,7 @@ async function checkLocalPorts () {
 checkLocalPorts();
 ```
 
-## Test
+## Test (Jest)
 
 ```sh
 npm test
