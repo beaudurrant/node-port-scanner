@@ -13,8 +13,8 @@ module.exports = nodePortScanner = (host, ports, status) => {
     const connectToPort = (host, port, callback) => {
       
       // error checking args
-      if (!Number.isInteger(port)) reject('port must be an integer');
-      if (port < 1 || port > 65535) reject('port must be in range [1-65535]');
+      if (!Number.isInteger(port)) reject({ 'error' : 'port must be an integer' });
+      if (port < 1 || port > 65535) reject({ 'error' : 'port must be in range [1-65535]' });
       
       let socket = new net.Socket();
       // increase this if y'all on dial up
@@ -76,11 +76,11 @@ module.exports = nodePortScanner = (host, ports, status) => {
     };
     
     // error checking args
-    if (host == undefined || !host) reject('host is required');
-    if (ports == undefined || !ports) reject('ports is required');
-    if (!Array.isArray(ports)) reject('ports must be an array');
-    if (status == undefined || !status) reject('status is required');
-    if (status.toLowerCase() != 'open' && status.toLowerCase() != 'closed') reject('status must be open or closed');
+    if (host == undefined || !host) reject({ 'error' : 'host is required' });
+    if (ports == undefined || !ports) reject({ 'error' : 'ports is required' });
+    if (!Array.isArray(ports)) reject({ 'error' : 'ports must be an array' });
+    if (status == undefined || !status) reject({ 'error' : 'status is required' });
+    if (status.toLowerCase() != 'open' && status.toLowerCase() != 'closed') reject({ 'error' : 'status must be open or closed' });
 
     // scan results will be and array of port numbers matching status
     let scanResults = { host : host, status : status, ports : [] };
