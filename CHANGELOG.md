@@ -1,4 +1,7 @@
-# 2.0.1
+# 2.2.0
+* [[`ba3efc022ddfe1a96d42cd8d1b65fb429d4700e8`](https://github.com/beaudurrant/node-port-scanner/commit/ba3efc022ddfe1a96d42cd8d1b65fb429d4700e8)] - Return error objects rather than strings (Beau Durrant)
+
+# 2.1.0
 * [[`015fcf731cd046c503f0391d18794971e59e6353`](https://github.com/beaudurrant/node-port-scanner/commit/015fcf731cd046c503f0391d18794971e59e6353)] - Updated tests to use jest (Beau Durrant)
 
 # 2.0.0
