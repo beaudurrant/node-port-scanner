@@ -29,7 +29,7 @@ nodePortScanner('127.0.0.1', [21, 22, 23, 25, 80, 110, 123, 443], 'open')
     console.log(results);
   })
   .catch(error => {
-    console.log('Error: ' + error);
+    console.log(error);
   });
 
 // scan for open remote common ports
@@ -38,7 +38,7 @@ nodePortScanner('github.com', [21, 22, 23, 25, 80, 110, 123, 443], 'open')
     console.log(results);
   })
   .catch(error => {
-    console.log('Error: ' + error);
+    console.log(error);
   });
 
 // scan for closed local common ports
@@ -47,7 +47,7 @@ nodePortScanner('127.0.0.1', [21, 22, 23, 25, 80, 110, 123, 443], 'closed')
     console.log(results);
   })
   .catch(error => {
-    console.log('Error: ' + error);
+    console.log(error);
   });
 
 // scan for closed remote common ports
@@ -56,7 +56,7 @@ nodePortScanner('github.com', [21, 22, 23, 25, 80, 110, 123, 443], 'closed')
     console.log(results);
   })
   .catch(error => {
-    console.log('Error: ' + error);
+    console.log(error);
   });
 
 
