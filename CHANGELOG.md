@@ -1,3 +1,6 @@
+# 2.2.1
+* [[`f67fcb592ef87f44cd3f7f0497bbcfcd41688c81`](https://github.com/beaudurrant/node-port-scanner/commit/f67fcb592ef87f44cd3f7f0497bbcfcd41688c81)] - Updated readme and usage errors (Beau Durrant)
+
 # 2.2.0
 * [[`ba3efc022ddfe1a96d42cd8d1b65fb429d4700e8`](https://github.com/beaudurrant/node-port-scanner/commit/ba3efc022ddfe1a96d42cd8d1b65fb429d4700e8)] - Return error objects rather than strings (Beau Durrant)
 
