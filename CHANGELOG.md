@@ -1,3 +1,6 @@
+# 3.0.0
+* [[`7d9b47044c47f32678673ff0fcf095ac565a9097`](https://github.com/beaudurrant/node-port-scanner/commit/7d9b47044c47f32678673ff0fcf095ac565a9097)] - Removed status from the call, added open/closed ports to the response (Beau Durrant)
+
 # 2.2.1
 * [[`f67fcb592ef87f44cd3f7f0497bbcfcd41688c81`](https://github.com/beaudurrant/node-port-scanner/commit/f67fcb592ef87f44cd3f7f0497bbcfcd41688c81)] - Updated readme and usage errors (Beau Durrant)
 
