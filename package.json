@@ -1,7 +1,7 @@
 {
   "name": "node-port-scanner",
-  "version": "2.2.1",
-  "description": "Simple JavaScript port scanner for open/closed ports",
+  "version": "3.0.0",
+  "description": "Lean JavaScript port scanner for open/closed ports",
   "keywords": [
     "portscanner",
     "portstatus",

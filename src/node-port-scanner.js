@@ -2,7 +2,7 @@
 const net = require('net');
 
 // scan range of ports for status (open|closed)
-module.exports = nodePortScanner = (host, ports, status) => {
+module.exports = nodePortScanner = (host, ports) => {
 
   return new Promise((resolve, reject) => {
     
@@ -50,21 +50,23 @@ module.exports = nodePortScanner = (host, ports, status) => {
     };
   
     // recursive function to check all port status one after the other is complete
-    const connectToPorts = (host, ports, status, scanResults) => {
+    const connectToPorts = (host, ports, scanResults) => {
       
       let port = ports.shift();
       
       connectToPort(host, port, function (result) {
         
         // add to our results based on the status of the result and scan
-        if ((result.status == 'connect' && status == 'open') ||
-            (result.status != 'connect' && status == 'closed')) {
-          scanResults.ports.push(result.port);
+        if (result.status == 'connect') {
+          scanResults.ports.open.push(result.port);
+        } 
+        else {
+          scanResults.ports.closed.push(result.port);
         }
         
         // recursivly go through all the ports
         if (ports.length) {
-          connectToPorts(host, ports, status, scanResults);
+          connectToPorts(host, ports, scanResults);
         }
         // when ports are done resolve the promise
         else {
@@ -79,16 +81,14 @@ module.exports = nodePortScanner = (host, ports, status) => {
     if (host == undefined || !host) reject({ 'error' : 'host is required' });
     if (ports == undefined || !ports) reject({ 'error' : 'ports is required' });
     if (!Array.isArray(ports)) reject({ 'error' : 'ports must be an array' });
-    if (status == undefined || !status) reject({ 'error' : 'status is required' });
-    if (status.toLowerCase() != 'open' && status.toLowerCase() != 'closed') reject({ 'error' : 'status must be open or closed' });
 
-    // scan results will be and array of port numbers matching status
-    let scanResults = { host : host, status : status, ports : [] };
+    // scan results will be host and arrays for open and closed ports
+    let scanResults = { 'host' : host, 'ports' : { 'open' : [], 'closed' : [] } };
   
     // no ports = all ports
     if (!ports.length) ports = allPorts;
     
-    connectToPorts(host, ports, status, scanResults);
+    connectToPorts(host, ports, scanResults);
   
   });
   
