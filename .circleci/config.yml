@@ -3,7 +3,7 @@ jobs:
 
   build:
     docker:
-      - image: circleci/node:12.19
+      - image: circleci/node:14.16.0
       
     working_directory: ~/node-port-scanner
       
@@ -11,4 +11,4 @@ jobs:
       - checkout
       - run: npm install
       - run: npm fund
-      - run: npm run usage
+      - run: npm test

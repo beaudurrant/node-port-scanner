@@ -2,6 +2,8 @@
 
 [![npm](https://img.shields.io/npm/v/node-port-scanner.svg)](https://www.npmjs.com/package/node-port-scanner)
 
+[![node-port-scanner](https://circleci.com/gh/beaudurrant/node-port-scanner.svg?style=svg)](https://www.npmjs.com/package/node-port-scanner)
+
 Scans ports to see if they are open or closed. 
 
 After calling nodePortScanner, ports are checked in order one after the previous is completed.
