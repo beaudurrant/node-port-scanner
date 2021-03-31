@@ -1,3 +1,7 @@
+# 3.0.1
+* [[`dd64d682032ae5ce5ffcf8bd402223dca6bc13ae`](https://github.com/beaudurrant/node-port-scanner/commit/dd64d682032ae5ce5ffcf8bd402223dca6bc13ae)] - Updated node version for tests, badge in README & extended tests timeout (Beau Durrant)
+* [[`f5c74e71ef63dd263c8f013b2959873385354dcf`](https://github.com/beaudurrant/node-port-scanner/commit/f5c74e71ef63dd263c8f013b2959873385354dcf)] - Updated package and lock (Beau Durrant)
+
 # 3.0.0
 * [[`7d9b47044c47f32678673ff0fcf095ac565a9097`](https://github.com/beaudurrant/node-port-scanner/commit/7d9b47044c47f32678673ff0fcf095ac565a9097)] - Removed status from the call, added open/closed ports to the response (Beau Durrant)
 
